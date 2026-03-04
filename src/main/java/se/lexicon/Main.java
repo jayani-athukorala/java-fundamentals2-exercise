@@ -9,17 +9,17 @@ public class Main {
         char[] charArray = {'J','a','v','a'};
 
         System.out.println("---- DateTime Exercises ----");
-        dateTimeEx.exercise1();
-        dateTimeEx.exercise2();
-        dateTimeEx.exercise3();
-        dateTimeEx.exercise4();
-        dateTimeEx.exercise5();
+        dateTimeEx.displayCurrentDate();
+        dateTimeEx.displayFormattedDate();
+        dateTimeEx.displayLastMonday();
+        dateTimeEx.parseDateFromString("1986-06-17");
+        dateTimeEx.displayDayOfWeek(1986, 6, 17);
         dateTimeEx.exercise6();
         dateTimeEx.exercise7();
         dateTimeEx.exercise8();
-        dateTimeEx.exercise9();
+        dateTimeEx.displayCurrentTime();
         dateTimeEx.exercise10();
-        dateTimeEx.exercise11();
+        dateTimeEx.parseTimeFromString("15:30:45");
         dateTimeEx.exercise12();
         dateTimeEx.exercise13();
         dateTimeEx.exercise14();
