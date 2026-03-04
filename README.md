@@ -6,6 +6,7 @@ It is structured into two main classes:
 - `DateTimeExercise.java` – exercises using `LocalDate`, `LocalTime`, `LocalDateTime`, `Period`, and `DateTimeFormatter`.
 - `StringExercise.java` – exercises using `String` operations such as length, charAt, substring, split, and conversion.
 
+---
 ## 📂 Project Structure
 ```
 src/main/java/se.lexicon/
@@ -57,3 +58,5 @@ The output of all exercises will be printed in the console.
 - Split names and print
 - Convert string to char array
 - Convert char array to string
+
+---
