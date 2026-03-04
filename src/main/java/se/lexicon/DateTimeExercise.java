@@ -29,7 +29,7 @@ public class DateTimeExercise {
                 .with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY)); // Adjust to last Monday
         IO.println("LocalDate of last Monday: " + lastMonday);
 
-        IO.println("Week starting from Monday:");
+        IO.println("Week starting from Monday: ");
         for (int i = 0; i < 7; i++) {
             IO.println(lastMonday.plusDays(i));
         }
@@ -37,10 +37,14 @@ public class DateTimeExercise {
 
     // Exercise 4
     public void exercise4() {
+        LocalDate parsedDate = LocalDate.parse("1986-06-17");
+        IO.println("Parsed date: " + parsedDate);
     }
 
     // Exercise 5
     public void exercise5() {
+        LocalDate myBirthday = LocalDate.of(1986, 6, 17);
+        IO.println("Day of '"+myBirthday+"' is: "+myBirthday.getDayOfWeek());
     }
 
     // Exercise 6
