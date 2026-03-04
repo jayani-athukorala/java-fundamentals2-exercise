@@ -6,6 +6,8 @@ public class Main {
         DateTimeExercise dateTimeEx = new DateTimeExercise();
         StringExercise stringEx = new StringExercise();
 
+        char[] charArray = {'J','a','v','a'};
+
         System.out.println("---- DateTime Exercises ----");
         dateTimeEx.exercise1();
         dateTimeEx.exercise2();
@@ -25,16 +27,16 @@ public class Main {
         dateTimeEx.exercise16();
 
         System.out.println("\n---- String Exercises ----");
-        stringEx.exercise1();
-        stringEx.exercise2();
-        stringEx.exercise3();
-        stringEx.exercise4();
-        stringEx.exercise5();
-        stringEx.exercise6();
-        stringEx.exercise7();
-        stringEx.exercise8();
-        stringEx.exercise9();
-        stringEx.exercise10();
-        stringEx.exercise11();
+        stringEx.displayLengthOfString("Java");
+        stringEx.displayCharAtIndex("Long example sentence", 6);
+        stringEx.displayIndexOfChar("Even longer example sentence", 'o');
+        stringEx.displaySubstring("Ok this is not as long!");
+        stringEx.convertLowercaseUppercase("CAPS EQUALS SCREAMING");
+        stringEx.displayTrimmedString("\tJ\ta\tv\ta\t");
+        stringEx.parseIntToString(20);
+        stringEx.splitString("Oil and Water", " and ");
+        stringEx.splitString("Carl,Susie,Fredrick,Bob,Erik", ",");
+        stringEx.displayCharsOfString("ThisShouldBeConverted");
+        stringEx.convertCharArrayToString(charArray);
     }
 }

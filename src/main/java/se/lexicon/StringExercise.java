@@ -1,75 +1,55 @@
 package se.lexicon;
 
-import java.util.Locale;
-
 public class StringExercise {
 
-    //Exercise 1
-    public void exercise1() {
-        IO.println("Length of 'Java': " + "Java".length());
+    //Exercise 1 : Length of a String
+    public void displayLengthOfString(String str) {
+        IO.println("Length of '"+str+"': " + str.length());
     }
 
-    // Exercise 2
-    public void exercise2() {
-        String str = "Long example sentence";
-        IO.println("Char at index 6 of '"+str+"' is: " + str.charAt(6));
+    // Exercise 2 : Character at Index
+    public void displayCharAtIndex(String str, int index) {
+        IO.println("Char at index '"+index+"' of '"+str+"' is: " + str.charAt(index));
     }
 
-    // Exercise 3
-    public void exercise3() {
-        String str = "Even longer example sentence";
-        IO.println("Index of 'o' in '"+str+"' is: " + str.indexOf('o'));
+    // Exercise 3 : Index Position of given char
+    public void displayIndexOfChar(String str, char position) {
+        IO.println("Index of '"+position+"' in '"+str+"' is: " + str.indexOf(position));
     }
 
-    // Exercise 4
-    public void exercise4() {
-        String str = "Ok this is not as long!";
+    // Exercise 4 : Substring
+    public void displaySubstring(String str) {
         IO.println("Substring of '" + str +"' : " + str.substring(11, 22));
     }
 
-    // Exercise 5
-    public void exercise5() {
-        String str = "CAPS EQUALS SCREAMING";
+    // Exercise 5 : Lowercase and Uppercase
+    public void convertLowercaseUppercase(String str) {
         String lowerStr = str.toLowerCase();
         IO.println("Lowercase: " + str.toLowerCase());
         IO.println("Uppercase: " + lowerStr.toUpperCase());
     }
 
-    // Exercise 6
-    public void exercise6() {
-        String str = "\tJ\ta\tv\ta\t";
+    // Exercise 6 : Trim String
+    public void displayTrimmedString(String str) {
         IO.println("After trim : '"+ str.trim() + "'");
     }
 
-    // Exercise 7
-    public void exercise7() {
-        int number = 20;
+    // Exercise 7 : Parse to String
+    public void parseIntToString(int number) {
         IO.println("Parse 'int' to 'String' : " +String.valueOf(number) + 20);
     }
 
-    // Exercise 8
-    public void exercise8() {
-        String str = "Oil and Water";
-        String[] words = str.split(" and ");
-        IO.println("Split 'Oil and Water' into 'Oil', 'Water': ");
+    // Exercise 8, 9 : Split String
+    public void splitString(String str, String splitBy) {
+        String[] words = str.split(splitBy);
+        IO.println("Split '"+ str +"' into words: ");
         for (String word : words){
             IO.println(word);
         }
     }
 
-    // Exercise 9
-    public void exercise9() {
-        String str = "Carl,Susie,Fredrick,Bob,Erik";
-        String[] words = str.split(",");
-        IO.println("Split 'Carl,Susie,Fredrick,Bob,Erik' into words: ");
-        for (String word : words){
-            IO.println(word);
-        }
-    }
-
-    // Exercise 10
-    public void exercise10() {
-        String str = "ThisShouldBeConverted";
+    // Exercise 10 : Convert to Char Array
+    public void displayCharsOfString(String str) {
         char[] characters = str.toCharArray();
         IO.println("Convert 'String' to 'char' array : ");
         for (char character: characters) {
@@ -77,9 +57,8 @@ public class StringExercise {
         }
     }
 
-    // Exercise 11
-    public void exercise11() {
-        char[] charArray = {'J','a','v','a'};
+    // Exercise 11 : Convert Char Array to String
+    public void convertCharArrayToString(char[] charArray) {
         String str = new String(charArray);
         IO.println("Convert 'char' array to 'String' : " + str);
     }
