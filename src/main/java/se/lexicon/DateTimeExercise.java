@@ -1,21 +1,38 @@
 package se.lexicon;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.time.temporal.WeekFields;
+import java.time.temporal.TemporalAdjusters;
 
 public class DateTimeExercise {
+    public LocalDate today = LocalDate.now();
 
     // Exercise 1
     public void exercise1() {
-        LocalDate today = LocalDate.now();
-        System.out.println("Current date: " + today);
+        IO.println("Current date: " + today);
     }
 
     // Exercise 2
     public void exercise2() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMMM", new Locale("sv", "SE"));
+        String formatedDate = today.format(formatter);
+        IO.println("Current date (formatted): " + formatedDate);
     }
 
     // Exercise 3
     public void exercise3() {
+//        WeekFields isoWeekFields = WeekFields.ISO; // Monday as first day
+        LocalDate lastMonday = today
+                .with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY)); // Adjust to last Monday
+        IO.println("LocalDate of last Monday: " + lastMonday);
+
+        IO.println("Week starting from Monday:");
+        for (int i = 0; i < 7; i++) {
+            IO.println(lastMonday.plusDays(i));
+        }
     }
 
     // Exercise 4
