@@ -65,8 +65,9 @@ public class DateTimeExercise {
         IO.println("Current time: " + timeNow);
     }
 
-    // Exercise 10
-    public void exercise10() {
+    // Exercise 10 : Nanoseconds of LocalTime
+    public void nanoSecondsLocalTime() {
+        IO.println("Local Time in Nanoseconds: " + timeNow.getNano());
     }
 
     // Exercise 11 : Parse Time from String
@@ -75,8 +76,10 @@ public class DateTimeExercise {
         IO.println("Parsed time: " + parsedTime);
     }
 
-    // Exercise 12
-    public void exercise12() {
+    // Exercise 12 : Formatted Current Time
+    public void formattedCurrentTime() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        System.out.println("Formatted time: " + timeNow.format(formatter));
     }
 
     // Exercise 13
@@ -90,7 +93,7 @@ public class DateTimeExercise {
     // Exercise 15 : Combine Date and Time
     public void combineDateTime() {
         LocalDateTime combined = LocalDateTime.of(today, timeNow);
-        System.out.println("Combined Date and Time : " + combined);
+        IO.println("Combined Date and Time : " + combined);
     }
 
     // Exercise 16 : Extract Components from LocalDateTime
@@ -100,7 +103,7 @@ public class DateTimeExercise {
         LocalDate date = dateTime.toLocalDate();
         LocalTime time = dateTime.toLocalTime();
 
-        System.out.println("Date: " + date);
-        System.out.println("Time: " + time);
+        IO.println("Date: " + date);
+        IO.println("Time: " + time);
     }
 }

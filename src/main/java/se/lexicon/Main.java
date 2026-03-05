@@ -18,9 +18,9 @@ public class Main {
         dateTimeEx.exercise7();
         dateTimeEx.exercise8();
         dateTimeEx.displayCurrentTime();
-        dateTimeEx.exercise10();
+        dateTimeEx.nanoSecondsLocalTime();
         dateTimeEx.parseTimeFromString("15:30:45");
-        dateTimeEx.exercise12();
+        dateTimeEx.formattedCurrentTime();
         dateTimeEx.exercise13();
         dateTimeEx.exercise14();
         dateTimeEx.combineDateTime();
