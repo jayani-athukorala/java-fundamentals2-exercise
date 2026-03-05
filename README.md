@@ -42,8 +42,17 @@ The output of all exercises will be printed in the console.
 - Print last Monday and the week
 - Parse date from string
 - Print day of the week for birthday
+- Future and past date adjustments
+- Period between dates
+- Add period to current date
 - Print current time
+- Print nanoseconds of current time
 - Parse time from string
+- Print formatted current time
+- Create specific LocalDateTime
+- Print formatted LocalDateTime
+- Combine LocalDate and LocalTime
+- Extract date and time from LocalDateTime
 
 ### String Exercises
 
