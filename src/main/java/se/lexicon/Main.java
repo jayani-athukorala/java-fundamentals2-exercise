@@ -8,25 +8,25 @@ public class Main {
 
         char[] charArray = {'J','a','v','a'};
 
-        System.out.println("---- DateTime Exercises ----");
+        IO.println("---- DateTime Exercises ----");
         dateTimeEx.displayCurrentDate();
         dateTimeEx.displayFormattedDate();
         dateTimeEx.displayLastMonday();
         dateTimeEx.parseDateFromString("1986-06-17");
         dateTimeEx.displayDayOfWeek(1986, 6, 17);
-        dateTimeEx.exercise6();
-        dateTimeEx.exercise7();
-        dateTimeEx.exercise8();
+        dateTimeEx.futurePastDate(10, 10);
+        dateTimeEx.periodBetweenDates(95, 5, 8);
+        dateTimeEx.addPeriodToDate(4, 7, 29);
         dateTimeEx.displayCurrentTime();
         dateTimeEx.nanoSecondsLocalTime();
         dateTimeEx.parseTimeFromString("15:30:45");
         dateTimeEx.formattedCurrentTime();
-        dateTimeEx.exercise13();
-        dateTimeEx.exercise14();
+        dateTimeEx.specificLocalDateTime(2018, 4, 5, 10, 35);
+        dateTimeEx.formatLocalDateTime(2018, 4, 5, 10, 35);
         dateTimeEx.combineDateTime();
         dateTimeEx.extractFromLocalDateTime();
 
-        System.out.println("\n---- String Exercises ----");
+        IO.println("\n---- String Exercises ----");
         stringEx.displayLengthOfString("Java");
         stringEx.displayCharAtIndex("Long example sentence", 6);
         stringEx.displayIndexOfChar("Even longer example sentence", 'o');
