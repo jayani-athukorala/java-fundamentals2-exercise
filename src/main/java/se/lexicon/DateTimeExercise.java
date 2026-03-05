@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.time.temporal.TemporalAdjusters;
+import java.time.LocalDateTime;
 
 public class DateTimeExercise {
     public LocalDate today = LocalDate.now();
@@ -25,7 +26,6 @@ public class DateTimeExercise {
 
     // Exercise 3 : Last Monday and the Entire Week
     public void displayLastMonday() {
-//        WeekFields isoWeekFields = WeekFields.ISO; // Monday as first day
         LocalDate lastMonday = today
                 .with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY)); // Adjust to last Monday
         IO.println("LocalDate of last Monday: " + lastMonday);
@@ -87,11 +87,20 @@ public class DateTimeExercise {
     public void exercise14() {
     }
 
-    // Exercise 15
-    public void exercise15() {
+    // Exercise 15 : Combine Date and Time
+    public void combineDateTime() {
+        LocalDateTime combined = LocalDateTime.of(today, timeNow);
+        System.out.println("Combined Date and Time : " + combined);
     }
 
-    // Exercise 16
-    public void exercise16() {
+    // Exercise 16 : Extract Components from LocalDateTime
+    public void extractFromLocalDateTime() {
+        LocalDateTime dateTime = LocalDateTime.now();
+
+        LocalDate date = dateTime.toLocalDate();
+        LocalTime time = dateTime.toLocalTime();
+
+        System.out.println("Date: " + date);
+        System.out.println("Time: " + time);
     }
 }

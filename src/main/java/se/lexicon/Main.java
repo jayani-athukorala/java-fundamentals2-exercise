@@ -23,8 +23,8 @@ public class Main {
         dateTimeEx.exercise12();
         dateTimeEx.exercise13();
         dateTimeEx.exercise14();
-        dateTimeEx.exercise15();
-        dateTimeEx.exercise16();
+        dateTimeEx.combineDateTime();
+        dateTimeEx.extractFromLocalDateTime();
 
         System.out.println("\n---- String Exercises ----");
         stringEx.displayLengthOfString("Java");
